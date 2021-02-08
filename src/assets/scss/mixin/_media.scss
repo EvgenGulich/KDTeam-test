@@ -1,0 +1,19 @@
+@mixin mediaSize($media) {
+    @if $media == desktop {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $media == tablet {
+        @media (min-width: 550px) {
+            @content;
+        }
+        /* stylelint-disable */
+    } @else {
+        /* stylelint-enable */
+        @media (min-width: $media+px) {
+            @content;
+        }
+    }
+}

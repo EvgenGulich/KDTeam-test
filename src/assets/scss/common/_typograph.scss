@@ -1,0 +1,27 @@
+@include font-face(
+    'Montserrat',
+    '~/src/assets/fonts/montserrat-v15-latin-regular',
+    400,
+    normal
+);
+
+@include font-face(
+    'Montserrat',
+    '~/src/assets/fonts/montserrat-v15-latin-700',
+    700,
+    bold
+);
+
+@include font-face(
+    'Montserrat',
+    '~/src/assets/fonts/montserrat-v15-latin-500',
+    500,
+    normal
+);
+
+@include font-face(
+    'Montserrat',
+    '~/src/assets/fonts/montserrat-v15-latin-500italic',
+    500,
+    italic
+);

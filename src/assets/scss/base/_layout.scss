@@ -1,0 +1,16 @@
+.main-container {
+    max-width: 75vw;
+    margin: 0 auto;
+
+    .inner {
+        padding: 0 get-m-vw(10px);
+
+        @include mediaSize(tablet) {
+            padding: 0 get-t-vw(10px);
+        }
+
+        @include mediaSize(desktop) {
+            padding: 0 get-vw(64px);
+        }
+    }
+}
