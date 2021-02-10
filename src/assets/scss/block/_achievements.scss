@@ -1,0 +1,90 @@
+.achievements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include mediaSize(tablet) {
+        flex-direction: row;
+    }
+}
+
+.achievements__item {
+    width: 100%;
+    padding: get-m-vw(35px) get-m-vw(35px);
+
+    &:not(:nth-child(-n + 2)) {
+        border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    }
+
+    @include mediaSize(tablet) {
+        width: 33%;
+        padding: get-t-vw(25px) get-t-vw(35px);
+
+        &:not(:nth-child(-n + 2)) {
+            border: none;
+        }
+
+        &:nth-child(1) {
+            border-right: 0.0625rem solid rgba(255, 255, 255, 0.1);
+            border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+        }
+
+        &:nth-child(2) {
+            border-right: 0.0625rem solid rgba(255, 255, 255, 0.1);
+            border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+        }
+
+        &:nth-child(3) {
+            border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+        }
+
+        &:nth-child(4) {
+            border-right: 0.0625rem solid rgba(255, 255, 255, 0.1);
+        }
+
+        &:nth-child(5) {
+            border-right: 0.0625rem solid rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(35px) get-vw(75px);
+    }
+}
+
+.achievements__block-title {
+    color: $colorWhite;
+    text-align: start;
+}
+
+.achievements__title {
+    padding: get-m-vw(10px) 0;
+    color: $colorWhite;
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(10px) 0;
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(10px) 0;
+    }
+}
+
+.achievements__text {
+    color: $colorWhite;
+}
+
+.achievements__icon {
+    width: get-m-vw(40px);
+    height: get-m-vw(40px);
+
+    @include mediaSize(tablet) {
+        width: get-t-vw(40px);
+        height: get-t-vw(40px);
+    }
+
+    @include mediaSize(desktop) {
+        width: get-vw(40px);
+        height: get-vw(40px);
+    }
+}

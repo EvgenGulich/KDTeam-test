@@ -1,5 +1,5 @@
 import '@design';
 
-// import { bootstrap } from './utils/bootstrap';
+import { bootstrap } from './utils/bootstrap';
 
-// bootstrap();
+bootstrap();

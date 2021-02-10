@@ -10,9 +10,21 @@ ul {
     list-style-type: none;
 }
 
+button,
 a {
     color: inherit;
     text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+// html {
+//     scroll-behavior: smooth;
+// }
+
+body {
+    width: 100%;
 }
 
 $colorRed: #ff4653;
@@ -21,6 +33,23 @@ $colorTitle: #3c3c3b;
 $colorWhite: #fff;
 $colorBlue: #3066d1;
 $colorGreen: #1ec89e;
-$colorBGBlue: #e8f2fe;
+$colorBGBlue: #f6f9fc;
+$colorBGDarkBlue: #e8f2fe;
 
 $shadow: 0 4px 6px rgba(57, 67, 87, 0.104535);
+
+%main-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $colorText;
+}
+
+%main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+    color: $colorTitle;
+}

@@ -8,27 +8,497 @@
     </head>
     <body id="top">
         <header class="header">
-            <div class="main-container">
-                <div class="inner">
-                    <div class="header__desktop">
-                        <a href="logo-container" href="#top">
-                            <svg class="logo">
-                                <use
-                                    xlink:href="../image/spritemap.svg#sprite-logo"
-                                />
+            <div class="main-container inner">
+                <div class="header__menu">
+                    <a href="#top">
+                        <svg class="header__logo">
+                            <use xlink:href="../image/spritemap.svg#sprite-logo" />
+                        </svg>
+                    </a>
+                    <nav>
+                        <ul class="header__nav">
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                            <li><a href="/">О нас</a></li>
+                            <li><a href="/">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__item">
+                        <div class="header__languages">
+                            <div class="header__languages_text">Ру</div>
+                        </div>
+                        <button  class="base-button discuss-project">
+                            <p>Обсудить проект</p>
+                        </button>
+                        <div id='nav-bar'>
+                            <div class="nav-bar__open-btn">
+                                <div class="hamburger">
+                                    <span></span>
+                            </div>
+                        </div>
+                        <nav class="nav-mobile">
+                            <a class="header__nav-bar_log" href="#top">
+                                <svg class="header__logo">
+                                    <use xlink:href="../image/spritemap.svg#sprite-logo-white" />
+                                </svg>
+                            </a>
+                            <svg class="nav-bar__close-btn">
+                                <use xlink:href="../image/spritemap.svg#sprite-letter-x" />
                             </svg>
-                        </a>
-                        <nav id="desktop-nav">
-                            <ul class="header__nav_desktop">
-                                <li><a href="/">Услуги</a></li>
-                                <li><a href="/">Портфолио</a></li>
+                            <button class="base-button blue">
+                                 Обсудить проект
+                            </button>
+                            <ul class="header__nav_mobile">
+                                <li><a href="#services">Услуги</a></li>
+                                <li><a href="#portfolio">Портфолио</a></li>
                                 <li><a href="/">О нас</a></li>
                                 <li><a href="/">Контакты</a></li>
                             </ul>
-                        </nav>
+                            </nav>
+                            <div class="nav-mobile-overlay" />
+                        </div>
                     </div>
-                </div>
+
             </div>
         </header>
+        <main>
+            <section class="section">
+                <div class="main-container inner">
+                        <div class="banner">
+                            <div class="banner__item">
+                                <div class="banner__promo-block">
+                                    <h1 class="banner__title">Разработка и поддержка сложныx cайтов на Битрикс</h1>
+                                    <p class="banner__subtitle">Настройка и администрирование серверов</p>
+                                        <button class="base-button red bunner__button">
+                                            <p>Отправить заявку</p>
+                                        </button>
+                                </div>
+                            </div>
+                            <div class="banner__item banner__item_img">
+                                <svg class="banner__promo-img">
+                                    <use xlink:href="../image/spritemap.svg#sprite-promo" />
+                                </svg>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="main-container inner">
+                    <h2 class="block-title">Почему мы?</h2>
+                    <div class="about__items">
+                        <div class="about__item">
+                            <div class="about__content">
+                                <div class="about__img icon-green">
+                                    <svg class="about__icon">
+                                        <use xlink:href="../image/spritemap.svg#sprite-icon-clock" />
+                                    </svg>
+                                </div>
+                                <h3 class="about__title">Соблюдаем сроки</h3>
+                                <p class="about__text">Всегда соблюдаем оговоренные сроки</p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__content">
+                                <div class="about__img icon-dark-blue">
+                                    <svg class="about__icon">
+                                        <use xlink:href="../image/spritemap.svg#sprite-icon-clarity" />
+                                    </svg>
+                                </div>
+                                <h3 class="about__title">Открываем задачи</h3>
+                                <p class="about__text">Предоставляем открытый доступ к задачам</p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__content">
+                                <div class="about__img icon-pink">
+                                    <svg class="about__icon">
+                                        <use xlink:href="../image/spritemap.svg#sprite-icon-lamp" />
+                                    </svg>
+                                </div>
+                                <h3 class="about__title">Вникаем в детали</h3>
+                                <p class="about__text">Вникаем в суть и детали ваших задач</p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__content">
+                                <div class="about__img icon-purple">
+                                    <svg class="about__icon">
+                                        <use xlink:href="../image/spritemap.svg#sprite-icon-budget" />
+                                    </svg>
+                                </div>
+                                <h3 class="about__title">Соблюдаем бюджеты</h3>
+                                <p class="about__text">
+                                    Гарантируем выполнение работыв рамках установленного бюджета
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__content">
+                                <div class="about__img icon-orange">
+                                    <svg class="about__icon">
+                                        <use xlink:href="../image/spritemap.svg#sprite-icon-avatar" />
+                                    </svg>
+                                </div>
+                                <h3 class="about__title">Прикрепляем менеджера</h3>
+                                <p class="about__text">
+                                    Выделяем персонального менеджерадля вашего проекта
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__content">
+                                <div class="about__img icon-blue">
+                                    <svg class="about__icon">
+                                        <use xlink:href="../image/spritemap.svg#sprite-icon-budget" />
+                                    </svg>
+                                </div>
+                                <h3 class="about__title">Тестируем баги</h3>
+                                <p class="about__text">
+                                    Все задачи проходят несколько этапов проверки на баги
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="section background-blue">
+                <div class="main-container inner">
+                    <div class="services">
+                        <div class="services__item">
+                            <h2 class="block-title">Корпоративным клиентам</h2>
+                            <p class="services__discription">
+                                Ненадежный партнер навредит Вашему бизнесу финансово и репутационно.
+                                <br /> Мы более 5 лет работаем с топовыми агентствами и ни разу не подводили своих партнеров
+                            </p>
+                            <div class="services__cards">
+                                <div class="services__card">
+                                    <div class="services__content">
+                                        <svg class="services__icon">
+                                            <use xlink:href="../image/spritemap.svg#sprite-icon-code" />
+                                        </svg>
+                                            <div class="services__main">
+                                                <h4 class="services__title">Разработка сложных сайтов и сервисов</h4>
+                                                <p class="services__text">
+                                                    Мы специализируемся на e-commerce проектах со
+                                                    множеством интеграций. Разрабатываем и внедряемсложные SEO-решения
+                                                </p>
+                                            </div>
+                                        <button id="modal" class="base-button services__button"><p>Оставить заявку</p></button>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__content">
+                                        <svg class="services__icon">
+                                            <use xlink:href="../image/spritemap.svg#sprite-icon-headset" />
+                                        </svg>
+                                        <div class="services__main">
+                                            <h4 class="services__title">Техническая поддержка</h4>
+                                            <p class="services__text">
+                                                Берем на обслуживание сайты, разработанные не нами.
+                                                Выявляем и устраняем проблемы, наращиваем функционал.
+                                                Исправляем любую криворукость разработчиков
+                                            </p>
+                                        </div>
+                                        <button id="modal" class="base-button services__button"><p>Оставить заявку</p></button>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__content">
+                                        <svg class="services__icon">
+                                            <use xlink:href="../image/spritemap.svg#sprite-icon-server" />
+                                        </svg>
+                                        <div class="services__main">
+                                            <h4 class="services__title">Администрирование серверов</h4>
+                                            <p class="services__text">
+                                                Помогаем выбрать и настроить
+                                                сервер. Обеспечиваем мониторинг,
+                                                резервное копирование, анализ
+                                                логов. Предупреждаем проблемы
+                                                раньше их появления
+                                            </p>
+                                        </div>
+                                        <button id="modal" class="base-button services__button"><p>Оставить заявку</p></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <h2 class="block-title">Digital-агентствам</h2>
+                            <div class="services__cards">
+                                <div class="services__card">
+                                    <div class="services__content">
+                                        <svg class="services__icon">
+                                            <use xlink:href="../image/spritemap.svg#sprite-icon-dots" />
+                                        </svg>
+                                        <div class="services__main">
+                                            <h4 class="services__title">Аутсорсинг веб-разработки</h4>
+                                            <p class="services__text">
+                                                Разработка программного
+                                                обеспечения - это сложно.
+                                                Мы уже выстроили все
+                                                процессы и готовы
+                                                предоставить необходимые
+                                                ресурсы и специалистов на
+                                                условиях абонентской платы
+                                            </p>
+                                        </div>
+                                        <button id="modal" class="base-button services__button"><p>Оставить заявку</p></button>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__content">
+                                        <svg class="services__icon">
+                                            <use xlink:href="../image/spritemap.svg#sprite-icon-headset" />
+                                        </svg>
+                                        <div class="services__main">
+                                            <h4 class="services__title">Техническая поддержка</h4>
+                                            <p class="services__text">
+                                                Наши партнеры - топовые
+                                                SEO-агентства Москвы.
+                                                Мы готовы взять на себя все
+                                                обязанности, связанные с
+                                                технической поддержкой
+                                                сайтов клиентов, на
+                                                взаимовыгодных условиях
+                                            </p>
+                                        </div>
+                                        <button id="modal" class="base-button services__button"><p>Оставить заявку</p></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="section">
+                <div class="main-container inner">
+                    <div class="portfolio">
+                        <h2 class="block-title">Реализованные проекты</h2>
+                        <div class="portfolio__items">
+                            <div class="portfolio__item">
+                                <div class="portfolio__img_background dark-blue">
+                                    <a class="portfolio__img_link" href="/"></a>
+                                    <img class="portfolio__img" src="src/assets/image/gc-mic.png" alt="">
+                                </div>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__main">
+                                        <h4 class="portfolio__title">
+                                        Разработка и техническая поддержка сайта
+                                        <br /> для группы компаний  “МИЦ”
+                                        </h4>
+                                        <div class="portfolio__services">
+                                            <div class="portfolio__service web">Web- разработка</div>
+                                            <div class="portfolio__service support">Тех. поддержка</div>
+                                        </div>
+                                        <a class="portfolio__url block-text" href="">gk-mic.ru</a>
+                                        <p class="portfolio__text block-text">
+                                            Сайт объединяет в себе функционал поиска объектов жилой и
+                                            коммерческой недвижимости по всем жилым комплексам девелопера,
+                                            информацию о жилых комплексах, информацию о группе компаний.
+                                        </p>
+                                    </div>
+                                    <a href="" class="portfolio__check-case">
+                                        <p class="portfolio__check-case_text block-text">Посмотреть кейс</p>
+                                        <div class="portfolio__check-case_arrow">
+                                            <svg class="portfolio__icon">
+                                                <use xlink:href="../image/spritemap.svg#sprite-arrow" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio__item">
+                                <div class="portfolio__img_background blue">
+                                    <a class="portfolio__img_link" href="/"></a>
+                                    <img class="portfolio__img" src="src/assets/image/salamander.png" alt="">
+                                </div>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__main">
+                                        <h4 class="portfolio__title">
+                                        Разработка сайта Salamander
+                                        </h4>
+                                        <div class="portfolio__services">
+                                            <div class="portfolio__service web">Web- разработка</div>
+                                            <div class="portfolio__service admin">Администрирование</div>
+                                        </div>
+                                        <a class="portfolio__url block-text" href="">salamander.ru</a>
+                                        <p class="portfolio__text block-text">
+                                            Основной задачей данного проекта было сделать приятный и простой
+                                            сайт с точки зрения пользователя на базе 1С-Битрикс.
+                                        </p>
+                                    </div>
+                                    <a href="" class="portfolio__check-case">
+                                        <p class="portfolio__check-case_text block-text">Посмотреть кейс</p>
+                                        <div class="portfolio__check-case_arrow">
+                                            <svg class="portfolio__icon">
+                                                <use xlink:href="../image/spritemap.svg#sprite-arrow" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio__item">
+                                <div class="portfolio__img_background pink">
+                                    <a class="portfolio__img_link" href="/"></a>
+                                    <img class="portfolio__img" src="src/assets/image/ascent-import.png" alt="">
+                                </div>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__main">
+                                        <h4 class="portfolio__title">
+                                            Разработка и поддержка сайта ascent-import
+                                        </h4>
+                                        <div class="portfolio__services">
+                                            <div class="portfolio__service web">Web- разработка</div>
+                                            <div class="portfolio__service support">Тех. поддержка</div>
+                                            <div class="portfolio__service design">UX/UI- дизайн</div>
+                                        </div>
+                                        <a class="portfolio__url block-text" href="">salamander.ru</a>
+                                        <p class="portfolio__text block-text">
+                                            Основной задачей данного проекта было сделать приятный и простой
+                                            сайт с точки зрения пользователя на базе 1С-Битрикс.
+                                            Для удобности работы с сайтом реализован полностью
+                                            автоматизированный процесс обмена данными с учетной системой заказчика
+                                        </p>
+                                    </div>
+                                    <a href="" class="portfolio__check-case">
+                                        <p class="portfolio__check-case_text block-text">Посмотреть кейс</p>
+                                        <div class="portfolio__check-case_arrow">
+                                            <svg class="portfolio__icon">
+                                                <use xlink:href="../image/spritemap.svg#sprite-arrow" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section background-blue">
+                <div class="main-container inner">
+                    <h2 class="block-title">Нам доверяют</h2>
+                    <div class="partner content">
+                        <div class="partner__items">
+                            <div class="partner__item">
+                                <svg class="partner__logo">
+                                    <use xlink:href="../image/spritemap.svg#sprite-novograd" />
+                                </svg>
+                            </div>
+                            <div class="partner__item">
+                                <svg class="partner__logo">
+                                    <use xlink:href="../image/spritemap.svg#sprite-mic-development" />
+                                </svg>
+                            </div>
+                            <div class="partner__item">
+                                <svg class="partner__logo">
+                                    <use xlink:href="../image/spritemap.svg#sprite-salamander" />
+                                </svg>
+                            </div>
+                            <div class="partner__item">
+                                <svg class="partner__logo">
+                                    <use xlink:href="../image/spritemap.svg#sprite-ascent-import" />
+                                </svg>
+                            </div>
+                            <div class="partner__item">
+                                <svg class="partner__logo">
+                                    <use xlink:href="../image/spritemap.svg#sprite-estimate" />
+                                </svg>
+                            </div>
+                            <div class="partner__item">
+                                <svg class="partner__logo">
+                                    <use xlink:href="../image/spritemap.svg#sprite-vera" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section background-dark-blue-gradient">
+                <div class="main-container inner">
+                    <div class="achievements">
+                        <div class="achievements__item">
+                             <h2 class="block-title achievements__block-title ">
+                                 Наши достижения
+                             </h2>
+                        </div>
+                        <div class="achievements__item">
+                            <svg class="achievements__icon">
+                                    <use xlink:href="../image/spritemap.svg#sprite-icon-chart-line" />
+                            </svg>
+                            <h4 class="title achievements__title">
+                                Бизнес-процессы
+                            </h4>
+                            <p class="block-text achievements__text">
+                                Отработанные процессы
+                                для типовых задач
+                            </p>
+                        </div>
+                        <div class="achievements__item">
+                            <svg class="achievements__icon">
+                                    <use xlink:href="../image/spritemap.svg#sprite-bitricks" />
+                            </svg>
+                            <h4 class="title achievements__title">
+                                Партнерство
+                            </h4>
+                            <p class="block-text achievements__text">
+                                Партнеры 1С-Битрикс.
+                                Партнеры топовых
+                                SEO-агентств
+                            </p>
+                        </div>
+                        <div class="achievements__item">
+                            <div class="achievements__data">92%</div>
+                            <h4 class="title achievements__title">
+                                Сроки
+                            </h4>
+                            <p class="block-text achievements__text">
+                                92% задач выполняется по графику.
+                            </p>
+                        </div>
+                        <div class="achievements__item">
+                            <div class="achievements__data">17</div>
+                            <h4 class="title achievements__title">
+                                Специалисты
+                            </h4>
+                            <p class="block-text achievements__text">
+                               17 разработчиков в штате. Опыт работыот 2 лет
+                            </p>
+                        </div>
+                        <div class="achievements__item">
+                            <div class="achievements__data">2007</div>
+                            <h4 class="title achievements__title">
+                                Опыт
+                            </h4>
+                            <p class="block-text achievements__text">
+                                Разрабатываем сайты с 2007 года
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="main-container inner">
+                    <div class="companion">
+                        <h2 class="block-title">Наши партнеры</h2>
+                        <div class="companion content">
+                            <div class="companion__items">
+                                <div class="companion__item">
+                                    <img class="companion__logo" src="/src/assets/image/pride-marketing.png" alt="pride marketing logo">
+                                </div>
+                                <div class="companion__item">
+                                    <img class="companion__logo" src="/src/assets/image/panshin-group.png" alt="Агенство интернет маркетинга Паньшин Групп">
+                                </div>
+                                <div class="companion__item">
+                                    <img class="companion__logo" src="/src/assets/image/1с-bitrecks.png" alt="1C Битрикс">
+                                </div>
+                                <div class="companion__item">
+                                    <img class="companion__logo" src="/src/assets/image/yandex.png" alt="Яндекс облако">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

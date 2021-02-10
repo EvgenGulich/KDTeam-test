@@ -1,0 +1,73 @@
+.banner {
+    display: flex;
+}
+
+.banner__item {
+    display: flex;
+    width: 100%;
+
+    @include mediaSize(tablet) {
+        width: 50%;
+    }
+}
+
+.banner__item_img {
+    display: none;
+
+    @include mediaSize(tablet) {
+        display: block;
+    }
+}
+
+.banner__title {
+    padding: get-m-vw(17px) 0;
+    margin: 0;
+    font-size: get-m-vw(35px);
+    font-weight: 700;
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(17px) 0;
+        font-size: get-t-vw(25px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(17px) 0;
+        font-size: get-vw(50px);
+    }
+}
+
+.banner__subtitle {
+    @extend %main-text;
+
+    padding-bottom: get-m-vw(35px);
+    font-size: get-m-vw(12px);
+
+    @include mediaSize(tablet) {
+        padding-bottom: get-t-vw(55px);
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-bottom: get-vw(75px);
+        font-size: get-vw(18px);
+    }
+}
+
+.banner__promo-block {
+    margin: auto 0;
+}
+
+.banner__promo-img {
+    display: none;
+
+    @include mediaSize(tablet) {
+        display: block;
+        width: get-t-vw(300px);
+        height: get-t-vw(400px);
+    }
+
+    @include mediaSize(desktop) {
+        width: get-vw(700px);
+        height: get-vw(700px);
+    }
+}
