@@ -1,0 +1,142 @@
+.services__discription {
+    @extend %main-text;
+
+    margin-top: get-m-vw(16px);
+    font-size: get-m-vw(14px);
+    text-align: center;
+
+    @include mediaSize(tablet) {
+        margin-top: get-t-vw(16px);
+        font-size: get-t-vw(16px);
+    }
+
+    @include mediaSize(desktop) {
+        margin-top: get-vw(16px);
+        font-size: get-vw(16px);
+    }
+}
+
+.services__item:not(:first-child) {
+    padding-top: get-m-vw(90px);
+
+    @include mediaSize(tablet) {
+        padding-top: get-t-vw(60px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-top: get-vw(100px);
+    }
+}
+
+.services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: get-m-vw(20px);
+
+    @include mediaSize(tablet) {
+        padding-top: get-t-vw(40px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-top: get-vw(80px);
+    }
+}
+
+.services__card {
+    width: 100%;
+    height: get-m-vw(400px);
+    margin: get-m-vw(20px);
+
+    @include mediaSize(tablet) {
+        width: calc(100% / 2.3);
+        height: get-t-vw(400px);
+        margin: get-t-vw(20px);
+    }
+
+    @include mediaSize(desktop) {
+        width: 30%;
+        height: get-vw(500px);
+        margin: 0 get-vw(20px);
+    }
+}
+
+.services__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    padding: get-m-vw(30px) get-m-vw(25px);
+    background-color: $colorWhite;
+    border: 1px solid rgba(109, 120, 132, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(57, 67, 87, 0.104535);
+    transition: box-shadow 0.2s ease-in-out;
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(30px) get-t-vw(25px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(60px) get-vw(50px);
+        border-radius: get-vw(10px);
+
+        &:hover {
+            box-shadow: 15px 15px 15px rgba(57, 67, 87, 0.104535);
+            transition: box-shadow 0.2s ease-in-out;
+
+            .services__button {
+                color: $colorWhite;
+                background: #f32f3c;
+                border: 1px solid transparent;
+            }
+        }
+    }
+}
+
+.services__icon {
+    width: get-m-vw(50px);
+    height: get-m-vw(50px);
+
+    @include mediaSize(tablet) {
+        width: get-t-vw(50px);
+        height: get-t-vw(50px);
+    }
+
+    @include mediaSize(desktop) {
+        width: get-vw(50px);
+        height: get-vw(50px);
+    }
+}
+
+.services__title {
+    @extend %main-title;
+
+    margin-bottom: get-m-vw(16px);
+    font-size: get-m-vw(20px);
+
+    @include mediaSize(tablet) {
+        margin-bottom: get-t-vw(16px);
+        font-size: get-t-vw(20px);
+    }
+
+    @include mediaSize(desktop) {
+        margin-bottom: get-vw(16px);
+        font-size: get-vw(23px);
+    }
+}
+
+.services__text {
+    @extend %main-text;
+
+    font-size: get-m-vw(14px);
+
+    @include mediaSize(tablet) {
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        font-size: get-vw(16px);
+    }
+}

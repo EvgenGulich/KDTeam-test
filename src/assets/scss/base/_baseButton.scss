@@ -1,0 +1,103 @@
+.base-button {
+    position: relative;
+    box-sizing: border-box;
+    padding: get-m-vw(10px) get-m-vw(20px);
+    font-size: get-m-vw(14px);
+    color: $colorRed;
+    cursor: pointer;
+    border: 1px solid $colorRed;
+    border-radius: 5px;
+    transition: color 0.1s ease;
+
+    p {
+        position: relative;
+        z-index: 2;
+    }
+
+    @extend %main-text;
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(12px) get-t-vw(24px);
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(12px) get-vw(24px);
+        font-size: get-vw(14px);
+        border-radius: get-vw(5px);
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0%;
+        height: 100%;
+        content: '';
+        transition: width 0.1s ease, left 0.1s ease;
+    }
+
+    &:hover {
+        color: white;
+        border: 1px solid transparent;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: #ff4653;
+            border-radius: 5px;
+            transition: width 0.2s ease, left 0.2s ease;
+
+            @include mediaSize(desktop) {
+                border-radius: get-vw(5px);
+            }
+        }
+    }
+
+    &:active {
+        background-color: #d72531;
+    }
+}
+
+.base-button.blue {
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+
+    &:hover {
+        color: $colorTitle;
+        border: 1px solid transparent;
+
+        &::after {
+            background: $colorWhite;
+        }
+    }
+
+    &:active {
+        background-color: #fff;
+    }
+}
+
+.base-button.red {
+    color: $colorWhite;
+    background: #f32f3c;
+    border: 1px solid transparent;
+
+    &:hover {
+        color: $colorWhite;
+        border: 1px solid transparent;
+
+        &::after {
+            z-index: 1;
+            background: #ff4653;
+        }
+    }
+
+    &:active {
+        background-color: #d72531;
+    }
+}

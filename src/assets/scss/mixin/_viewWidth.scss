@@ -1,0 +1,69 @@
+$layout-width: 1920;
+$mobile-width: 375;
+$tablet-width: 760;
+
+@function get-vw($px) {
+    $vw-context: ($layout-width * 0.01) * 1px;
+
+    @return ($px/$vw-context) * 1vw;
+}
+
+@function get-t-vw($px) {
+    $vw-context: ($tablet-width * 0.01) * 1px;
+
+    @return ($px/$vw-context) * 1vw;
+}
+
+@function get-m-vw($px) {
+    $vw-context: ($mobile-width * 0.01) * 1px;
+
+    @return ($px/$vw-context) * 1vw;
+}
+
+@function get-vh($px) {
+    $vw-context: (1080 * 0.01) * 1px;
+
+    @return ($px/$vw-context) * 1vh;
+}
+
+@function get-t-vh($px) {
+    $vw-context: (1024 * 0.01) * 1px;
+
+    @return ($px/$vw-context) * 1vh;
+}
+
+@function get-m-vh($px) {
+    $vw-context: (667 * 0.01) * 1px;
+
+    @return ($px/$vw-context) * 1vh;
+}
+
+@function get-calc-vw($percent, $operator, $px) {
+    $vw-context: ($layout-width * 0.01) * 1px;
+
+    @return unquote(
+        (
+            'calc(' + $percent + ' ' + $operator + ' ' + ($px/$vw-context) * 1vw +')'
+        )
+    );
+}
+
+@function get-calc-mvw($percent, $operator, $px) {
+    $vw-context: ($mobile-width * 0.01) * 1px;
+
+    @return unquote(
+        (
+            'calc(' + $percent + ' ' + $operator + ' ' + ($px/$vw-context) * 1vw +')'
+        )
+    );
+}
+
+@function get-calc-tvw($percent, $operator, $px) {
+    $vw-context: ($tablet-width * 0.01) * 1px;
+
+    @return unquote(
+        (
+            'calc(' + $percent + ' ' + $operator + ' ' + ($px/$vw-context) * 1vw +')'
+        )
+    );
+}

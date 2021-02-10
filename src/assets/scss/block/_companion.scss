@@ -1,0 +1,41 @@
+.companion__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 0 get-m-vw(10px);
+
+    @include mediaSize(tablet) {
+        flex-wrap: nowrap;
+        padding: 0 get-t-vw(50px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: 0 get-vw(100px);
+    }
+}
+
+.companion__item {
+    display: flex;
+    width: 50%;
+    padding: get-m-vw(20px) 0;
+
+    @include mediaSize(desktop) {
+        width: 25%;
+        padding: 0;
+    }
+}
+
+.companion__logo {
+    width: get-m-vw(100px);
+    margin: auto;
+    object-fit: cover;
+
+    @include mediaSize(tablet) {
+        width: get-t-vw(100px);
+    }
+
+    @include mediaSize(desktop) {
+        width: 50%;
+    }
+}

@@ -1,0 +1,71 @@
+.main-container {
+    max-width: 100%;
+
+    @include mediaSize(desktop) {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+.inner {
+    padding: 0 get-m-vw(20px);
+
+    @include mediaSize(tablet) {
+        padding: 0 get-t-vw(20px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: 0 get-vw(64px);
+    }
+}
+
+.section {
+    padding: get-m-vw(30px) 0;
+
+    &:first-child {
+        padding-top: get-m-vw(100px);
+
+        @include mediaSize(tablet) {
+            padding-top: get-t-vw(100px);
+        }
+
+        @include mediaSize(desktop) {
+            padding-top: get-vw(120px);
+        }
+    }
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(30px) 0;
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(80px) 0;
+    }
+}
+
+.content {
+    padding: get-m-vw(40px) 0;
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(60px) 0;
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(80px) 0;
+    }
+}
+
+.achievements__data {
+    @extend %main-title;
+
+    font-size: get-m-vw(50px);
+    color: $colorWhite;
+
+    @include mediaSize(tablet) {
+        font-size: get-t-vw(50px);
+    }
+
+    @include mediaSize(desktop) {
+        font-size: get-vw(50px);
+    }
+}

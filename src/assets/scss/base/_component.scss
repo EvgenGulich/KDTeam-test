@@ -1,0 +1,51 @@
+.block-title {
+    margin: 0 auto;
+    font-size: get-m-vw(26px);
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+
+    @include mediaSize(tablet) {
+        font-size: get-t-vw(26px);
+    }
+
+    @include mediaSize(desktop) {
+        font-size: get-vw(36px);
+    }
+}
+
+.background-blue {
+    background-color: $colorBGBlue;
+}
+
+.background-dark-blue-gradient {
+    background: linear-gradient(96.22deg, #3066d1 8.68%, #1547aa 98.9%);
+}
+
+.block-text {
+    @extend %main-text;
+
+    font-size: get-m-vw(14px);
+
+    @include mediaSize(tablet) {
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        font-size: get-vw(16px);
+    }
+}
+
+.title {
+    @extend %main-title;
+
+    font-size: get-m-vw(16px);
+
+    @include mediaSize(tablet) {
+        font-size: get-t-vw(16px);
+    }
+
+    @include mediaSize(desktop) {
+        font-size: get-vw(18px);
+    }
+}

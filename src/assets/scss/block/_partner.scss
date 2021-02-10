@@ -1,0 +1,34 @@
+.partner__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.partner__item {
+    display: flex;
+    width: 50%;
+
+    @include mediaSize(desktop) {
+        width: 33%;
+    }
+}
+
+.partner__logo {
+    width: 40%;
+    height: 70px;
+    margin: auto;
+    filter: grayscale(1);
+
+    @include mediaSize(tablet) {
+        height: 100px;
+    }
+
+    @include mediaSize(desktop) {
+        width: 40%;
+        height: 40%;
+    }
+
+    &:hover {
+        filter: none;
+    }
+}
