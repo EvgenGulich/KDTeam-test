@@ -1,4 +1,4 @@
-// @import '~swiper/swiper-bundle.min.css';
+@import '~swiper/swiper-bundle.min.css';
 @import '~normalize.css';
 
 @import './abstracts/variables';
@@ -12,6 +12,7 @@
 @import './base/layout';
 @import './base/baseButton';
 @import './base/component';
+@import './base/slider';
 
 @import './block/banner';
 @import './block/aboutCompany';
@@ -20,3 +21,7 @@
 @import './block/partner';
 @import './block/achievements';
 @import './block/companion';
+@import './block/program';
+@import './block/epilog';
+@import './block/team';
+@import './block/trust';

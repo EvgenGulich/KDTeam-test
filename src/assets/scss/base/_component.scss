@@ -36,6 +36,20 @@
     }
 }
 
+.block-text-small {
+    @extend %small-text;
+
+    font-size: get-m-vw(14px);
+
+    @include mediaSize(tablet) {
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        font-size: get-vw(14px);
+    }
+}
+
 .title {
     @extend %main-title;
 

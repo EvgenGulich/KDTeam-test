@@ -1,0 +1,16 @@
+.trust__item {
+    position: relative;
+    margin: auto;
+}
+
+.trust__overlay {
+    position: absolute;
+    inset: 0;
+    background: #3c3c3b;
+    border-radius: get-vw(10px);
+    opacity: 0.3;
+}
+
+.trust__img {
+    width: 100%;
+}

@@ -42,30 +42,3 @@
         padding: get-vw(80px) 0;
     }
 }
-
-.content {
-    padding: get-m-vw(40px) 0;
-
-    @include mediaSize(tablet) {
-        padding: get-t-vw(60px) 0;
-    }
-
-    @include mediaSize(desktop) {
-        padding: get-vw(80px) 0;
-    }
-}
-
-.achievements__data {
-    @extend %main-title;
-
-    font-size: get-m-vw(50px);
-    color: $colorWhite;
-
-    @include mediaSize(tablet) {
-        font-size: get-t-vw(50px);
-    }
-
-    @include mediaSize(desktop) {
-        font-size: get-vw(50px);
-    }
-}

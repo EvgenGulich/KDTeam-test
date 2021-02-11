@@ -1,2 +1,2 @@
-// export { swiperInit } from './swiper-init';
+export { Slider } from './Slider';
 export { NavBarCollapse } from './NavBarCollapse';

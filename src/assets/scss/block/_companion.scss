@@ -4,14 +4,17 @@
     align-items: center;
     width: 100%;
     padding: 0 get-m-vw(10px);
+    padding-top: get-m-vw(40px);
 
     @include mediaSize(tablet) {
         flex-wrap: nowrap;
         padding: 0 get-t-vw(50px);
+        padding-top: get-t-vw(60px);
     }
 
     @include mediaSize(desktop) {
         padding: 0 get-vw(100px);
+        padding-top: get-vw(100px);
     }
 }
 

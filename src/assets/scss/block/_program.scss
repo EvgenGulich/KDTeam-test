@@ -1,0 +1,109 @@
+.program {
+    display: flex;
+    flex-direction: column;
+
+    @include mediaSize(desktop) {
+        flex-direction: row;
+    }
+}
+
+.program__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 get-m-vw(30px);
+
+    @include mediaSize(tablet) {
+        padding: 0 get-t-vw(70px);
+    }
+
+    @include mediaSize(desktop) {
+        width: 42%;
+        padding: 0;
+        padding-right: get-vw(100px);
+    }
+}
+
+.program__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include mediaSize(desktop) {
+        width: 58%;
+    }
+}
+
+.program__item {
+    width: 100%;
+    padding: get-m-vw(32px);
+
+    @include mediaSize(tablet) {
+        width: 50%;
+        padding: get-t-vw(32px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(32px);
+    }
+}
+
+.program__title {
+    text-align: start;
+}
+
+.program__text {
+    padding-top: get-m-vw(24px);
+    padding-bottom: get-m-vw(40px);
+    font-size: get-m-vw(14px);
+
+    @extend %main-text;
+
+    @include mediaSize(tablet) {
+        padding-top: get-t-vw(24px);
+        padding-bottom: get-t-vw(40px);
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-top: get-vw(24px);
+        padding-bottom: get-vw(40px);
+        font-size: get-vw(14px);
+    }
+}
+
+.program__card-title {
+    padding-top: get-m-vw(24px);
+    padding-bottom: get-m-vw(8px);
+    font-size: get-m-vw(18px);
+
+    @extend %main-title;
+
+    @include mediaSize(tablet) {
+        padding-top: get-t-vw(24px);
+        padding-bottom: get-t-vw(8px);
+        font-size: get-t-vw(18px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-top: get-vw(24px);
+        padding-bottom: get-vw(8px);
+        font-size: get-vw(18px);
+    }
+}
+
+.program__icon {
+    width: get-m-vw(100px);
+    height: get-m-vw(100px);
+
+    @include mediaSize(tablet) {
+        width: get-t-vw(100px);
+        height: get-t-vw(100px);
+    }
+
+    @include mediaSize(desktop) {
+        width: get-vw(100px);
+        height: get-vw(100px);
+    }
+}

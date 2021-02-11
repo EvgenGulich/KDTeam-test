@@ -1,0 +1,124 @@
+.slider__content {
+    position: relative;
+    padding-top: get-m-vw(80px);
+
+    @include mediaSize(tablet) {
+        padding-top: get-t-vw(80px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-top: get-vw(80px);
+    }
+}
+
+.slider__container {
+    padding-bottom: get-m-vw(50px);
+
+    @include mediaSize(tablet) {
+        padding-bottom: get-t-vw(50px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-bottom: get-vw(50px);
+    }
+}
+
+.slider__container:hover {
+    .slider__nav_next {
+        box-shadow: 0 0 6px rgba(116, 70, 70, 0.104535);
+    }
+}
+
+.slider__slide {
+    display: flex;
+    width: 50%;
+    padding: 0 get-m-vw(10px);
+
+    @include mediaSize(tablet) {
+        width: 25%;
+        padding: 0 get-t-vw(20px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: 0 get-vw(20px);
+    }
+}
+
+.slider__nav_next,
+.slider__nav_prev {
+    position: absolute;
+    top: 50%;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(116, 70, 70, 0.104535);
+
+    @include mediaSize(desktop) {
+        display: flex;
+        width: get-vw(40px);
+        height: get-vw(40px);
+        border-radius: 50%;
+    }
+}
+
+.slider__nav_next {
+    left: 101%;
+}
+
+.slider__nav_prev {
+    right: 101%;
+}
+
+.slider__icon {
+    width: get-vw(30px);
+    height: get-vw(30px);
+    margin: auto;
+    color: $colorBlue;
+}
+
+.slider__icon_rotate {
+    transform: rotate(180deg);
+}
+
+.slider__counter {
+    @extend %main-text;
+
+    padding: 0 get-m-vw(5px);
+    font-size: get-m-vw(14px);
+    color: $colorBlue;
+
+    @include mediaSize(tablet) {
+        padding: 0 get-t-vw(5px);
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: 0 get-vw(5px);
+        font-size: get-vw(14px);
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70% !important;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+    width: get-m-vw(24px);
+    height: get-m-vw(6px);
+    background: #3066d1;
+    border-radius: 100px;
+
+    @include mediaSize(tablet) {
+        width: get-t-vw(24px);
+        height: get-t-vw(6px);
+    }
+
+    @include mediaSize(desktop) {
+        width: get-vw(24px);
+        height: get-vw(6px);
+    }
+}
