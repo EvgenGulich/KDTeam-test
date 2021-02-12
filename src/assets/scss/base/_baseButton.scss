@@ -65,15 +65,16 @@
 }
 
 .base-button.blue {
-    color: $colorWhite;
-    border: 1px solid $colorWhite;
+    color: $colorWhite !important;
+    background: none !important;
+    border: 1px solid $colorWhite !important;
 
     &:hover {
-        color: $colorTitle;
-        border: 1px solid transparent;
+        color: $colorBlue !important;
+        border: 1px solid transparent !important;
 
         &::after {
-            background: $colorWhite;
+            background: $colorWhite !important;
         }
     }
 
@@ -106,6 +107,7 @@
     display: flex;
     height: max-content;
     padding-bottom: get-m-vw(30px);
+    color: $colorBlue;
 
     @include mediaSize(tablet) {
         padding-bottom: get-t-vw(30px);
@@ -116,33 +118,41 @@
     }
 
     &:hover {
-        .check-case__text {
-            color: $colorRed;
-        }
+        color: $colorRed;
 
-        .check-case__icon {
-            color: $colorRed;
+        .check-case__text {
+            padding-right: get-m-vw(26px);
+            transition: padding-right 0.3s ease-in-out;
+
+            @include mediaSize(tablet) {
+                padding-right: get-t-vw(26px);
+            }
+
+            @include mediaSize(desktop) {
+                padding-right: get-vw(26px);
+            }
         }
     }
 }
 
 .check-case__text {
-    padding-right: get-m-vw(16px);
-    color: $colorBlue;
+    padding-right: get-m-vw(10px);
+    color: inherit;
+    transition: padding-right 0.3s ease-in-out;
 
     @include mediaSize(tablet) {
-        padding-right: get-t-vw(16px);
+        padding-right: get-t-vw(10px);
     }
 
     @include mediaSize(desktop) {
-        padding-right: get-vw(16px);
+        padding-right: get-vw(10px);
     }
 }
 
 .check-case__icon {
     width: get-m-vw(26px);
     height: get-m-vw(20px);
-    color: $colorBlue;
+    color: inherit;
 
     @include mediaSize(tablet) {
         width: get-t-vw(26px);

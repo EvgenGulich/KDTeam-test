@@ -1,4 +1,5 @@
 @import '~swiper/swiper-bundle.min.css';
+@import '~aos/dist/aos.css';
 @import '~normalize.css';
 
 @import './abstracts/variables';
@@ -8,11 +9,14 @@
 @import './common/typograph';
 
 @import './layouts/header';
+@import './layouts/footer';
 
 @import './base/layout';
 @import './base/baseButton';
 @import './base/component';
 @import './base/slider';
+@import './base/_form';
+@import './base/circle';
 
 @import './block/banner';
 @import './block/aboutCompany';
@@ -25,3 +29,4 @@
 @import './block/epilog';
 @import './block/team';
 @import './block/trust';
+@import './block/reviews';

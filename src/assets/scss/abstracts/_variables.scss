@@ -11,7 +11,10 @@ ul {
 }
 
 button,
-a {
+a,
+input,
+select,
+option {
     color: inherit;
     text-decoration: none;
     background: none;
@@ -19,9 +22,9 @@ a {
     outline: none;
 }
 
-// html {
-//     scroll-behavior: smooth;
-// }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     width: 100%;
@@ -35,7 +38,6 @@ $colorBlue: #3066d1;
 $colorGreen: #1ec89e;
 $colorBGBlue: #f6f9fc;
 $colorBGDarkBlue: #e8f2fe;
-
 $shadow: 0 4px 6px rgba(57, 67, 87, 0.104535);
 
 %main-text {

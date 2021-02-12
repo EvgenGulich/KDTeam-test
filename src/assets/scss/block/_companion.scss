@@ -9,7 +9,7 @@
     @include mediaSize(tablet) {
         flex-wrap: nowrap;
         padding: 0 get-t-vw(50px);
-        padding-top: get-t-vw(60px);
+        padding-top: get-t-vw(40px);
     }
 
     @include mediaSize(desktop) {

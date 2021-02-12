@@ -1,0 +1,83 @@
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: get-m-vw(24px);
+
+    @include mediaSize(tablet) {
+        margin-bottom: get-t-vw(24px);
+    }
+
+    @include mediaSize(desktop) {
+        margin-bottom: get-vw(24px);
+    }
+}
+
+.form__label {
+    @extend .block-text-small;
+
+    margin-bottom: get-m-vw(8px);
+    color: $colorWhite;
+
+    @include mediaSize(tablet) {
+        margin-bottom: get-t-vw(8px);
+    }
+
+    @include mediaSize(desktop) {
+        margin-bottom: get-vw(8px);
+    }
+}
+
+.form__input {
+    @extend .block-text-small;
+
+    padding: get-m-vw(20px);
+    color: $colorText;
+    background-color: $colorWhite;
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(20px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(20px);
+    }
+
+    &::placeholder {
+        color: #77899e;
+        opacity: 0.5;
+    }
+}
+
+.form__button {
+    width: 100%;
+    margin-bottom: get-m-vw(8px);
+
+    @include mediaSize(tablet) {
+        margin-bottom: get-t-vw(8px);
+    }
+
+    @include mediaSize(desktop) {
+        margin-bottom: get-vw(8px);
+    }
+}
+
+.form__politic {
+    @extend .block-text-small;
+
+    color: $colorWhite;
+    text-align: center;
+}
+
+.form__politic_underline {
+    @extend .block-text-small;
+
+    color: $colorWhite;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        color: $colorRed;
+        transition: background-color 0.2s ease-in-out;
+    }
+}

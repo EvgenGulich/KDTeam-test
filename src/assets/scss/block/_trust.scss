@@ -1,3 +1,15 @@
+.trust {
+    padding: 0;
+
+    @include mediaSize(tablet) {
+        padding: 0 get-t-vw(20px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: 0 get-vw(80px);
+    }
+}
+
 .trust__item {
     position: relative;
     margin: auto;

@@ -1,0 +1,139 @@
+.reviews {
+    padding: 0 get-m-vw(10px);
+
+    @include mediaSize(tablet) {
+        padding: 0 get-t-vw(10px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: 0 get-vw(200px);
+    }
+}
+
+.reviews__slide {
+    width: 100%;
+    padding: 0 get-m-vw(10px);
+
+    @include mediaSize(tablet) {
+        padding: 0 get-t-vw(50px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: 0 get-vw(150px);
+    }
+}
+
+.reviews__item {
+    padding: get-m-vw(24px);
+    background: #fff;
+    border: 1px solid rgba(139, 145, 166, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(57, 67, 87, 0.104535);
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(24px);
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(24px);
+    }
+}
+
+.reviews__header {
+    display: flex;
+    padding-bottom: get-m-vw(16px);
+
+    @include mediaSize(tablet) {
+        padding-bottom: get-t-vw(16px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-bottom: get-vw(16px);
+    }
+}
+
+.reviews__img {
+    width: get-m-vw(35px);
+    height: get-m-vw(35px);
+
+    @include mediaSize(tablet) {
+        width: get-t-vw(35px);
+        height: get-t-vw(35px);
+    }
+
+    @include mediaSize(desktop) {
+        width: get-vw(75px);
+        height: get-vw(75px);
+    }
+}
+
+.reviews__meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: get-m-vw(16px);
+
+    @include mediaSize(tablet) {
+        padding-left: get-t-vw(16px);
+    }
+
+    @include mediaSize(desktop) {
+        padding-left: get-vw(16px);
+    }
+}
+
+.reviews__name {
+    @extend %main-title;
+
+    font-weight: 600;
+}
+
+.reviews__position {
+    @extend .block-text;
+}
+
+.reviews__link {
+    @extend .block-text;
+
+    color: $colorBlue;
+
+    &:hover {
+        color: $colorRed;
+    }
+}
+
+.reviews__title,
+.reviews__text {
+    font-size: get-m-vw(12px);
+    font-style: italic;
+    font-weight: 500;
+
+    @include mediaSize(tablet) {
+        font-size: get-t-vw(14px);
+    }
+
+    @include mediaSize(desktop) {
+        font-size: get-vw(14px);
+    }
+}
+
+.reviews__text {
+    padding: get-m-vw(16px) 0;
+    color: $colorText;
+
+    @include mediaSize(tablet) {
+        padding: get-t-vw(16px) 0;
+    }
+
+    @include mediaSize(desktop) {
+        padding: get-vw(16px) 0;
+    }
+}
+
+.reviews__check-case {
+    color: $colorRed;
+
+    &:hover {
+        color: $colorBlue;
+    }
+}

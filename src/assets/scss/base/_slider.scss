@@ -1,9 +1,9 @@
 .slider__content {
     position: relative;
-    padding-top: get-m-vw(80px);
+    padding-top: get-m-vw(40px);
 
     @include mediaSize(tablet) {
-        padding-top: get-t-vw(80px);
+        padding-top: get-t-vw(40px);
     }
 
     @include mediaSize(desktop) {

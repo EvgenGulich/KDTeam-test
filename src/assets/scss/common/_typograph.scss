@@ -26,6 +26,13 @@
     italic
 );
 
+@include font-face(
+    'Montserrat',
+    '~/src/assets/fonts/montserrat-v15-cyrillic-600',
+    600,
+    normal
+);
+
 body {
     font-family: 'Montserrat', sans-serif;
 }

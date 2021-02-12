@@ -20,7 +20,9 @@
 }
 
 .section {
+    position: relative;
     padding: get-m-vw(30px) 0;
+    overflow: hidden;
 
     &:first-child {
         padding-top: get-m-vw(100px);

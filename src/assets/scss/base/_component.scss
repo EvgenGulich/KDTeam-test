@@ -14,12 +14,20 @@
     }
 }
 
+.blue-color {
+    color: $colorBlue;
+}
+
 .background-blue {
     background-color: $colorBGBlue;
 }
 
 .background-dark-blue-gradient {
     background: linear-gradient(96.22deg, #3066d1 8.68%, #1547aa 98.9%);
+}
+
+.background-dark-blue {
+    background: #e8f2fe;
 }
 
 .block-text {

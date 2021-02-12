@@ -7,74 +7,80 @@
         <title>KDTeam</title>
     </head>
     <body id="top">
-        <header class="header">
-            <div class="main-container inner">
-                <div class="header__menu">
-                    <a href="#top">
-                        <svg class="header__logo">
-                            <use xlink:href="../image/spritemap.svg#sprite-logo" />
-                        </svg>
-                    </a>
-                    <nav>
-                        <ul class="header__nav">
-                            <li><a href="#services">Услуги</a></li>
-                            <li><a href="#portfolio">Портфолио</a></li>
-                            <li><a href="/">О нас</a></li>
-                            <li><a href="/">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__item">
-                        <div class="header__languages">
-                            <div class="header__languages_text">Ру</div>
-                        </div>
-                        <button  class="base-button discuss-project">
-                            <p>Обсудить проект</p>
-                        </button>
-                        <div id='nav-bar'>
-                            <div class="nav-bar__open-btn">
-                                <div class="hamburger">
-                                    <span></span>
-                            </div>
-                        </div>
-                        <nav class="nav-mobile">
-                            <a class="header__nav-bar_log" href="#top">
-                                <svg class="header__logo">
-                                    <use xlink:href="../image/spritemap.svg#sprite-logo-white" />
-                                </svg>
-                            </a>
-                            <svg class="nav-bar__close-btn">
-                                <use xlink:href="../image/spritemap.svg#sprite-letter-x" />
-                            </svg>
-                            <button class="base-button blue">
-                                 Обсудить проект
-                            </button>
-                            <ul class="header__nav_mobile">
-                                <li><a href="#services">Услуги</a></li>
-                                <li><a href="#portfolio">Портфолио</a></li>
-                                <li><a href="/">О нас</a></li>
-                                <li><a href="/">Контакты</a></li>
-                            </ul>
-                            </nav>
-                            <div class="nav-mobile-overlay" />
+        <header data-scroll class="header">
+            <div class="header__menu">
+                <a href="#top">
+                    <svg class="header__logo">
+                        <use xlink:href="../image/spritemap.svg#sprite-logo" />
+                    </svg>
+                </a>
+                <nav>
+                    <ul class="header__nav">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#achievement">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__item">
+                    <div class="header__languages">
+                        <select class="header__languages_text">
+                            <option value="ru" selected>Ru</option>
+                            <option value="en">En</option>
+                        </select>
+                    </div>
+                    <button  class="base-button discuss-project">
+                        <p>Обсудить проект</p>
+                    </button>
+                    <div id='nav-bar'>
+                        <div class="nav-bar__open-btn">
+                            <div class="hamburger">
+                                <span></span>
                         </div>
                     </div>
-
+                    <nav class="nav-mobile">
+                        <a class="header__nav-bar_log" href="#top">
+                            <svg class="header__logo">
+                                <use xlink:href="../image/spritemap.svg#sprite-logo-white" />
+                            </svg>
+                        </a>
+                        <svg class="nav-bar__close-btn">
+                            <use xlink:href="../image/spritemap.svg#sprite-letter-x" />
+                        </svg>
+                        <button class="base-button blue">
+                            <p>Обсудить проект</p>
+                        </button>
+                        <ul class="header__nav_mobile">
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                            <li><a href="#achievement">О нас</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-mobile-overlay" />
+                </div>
             </div>
         </header>
         <main>
             <section class="section">
+                <span class="circle circle__color_green circle__position_left"></span>
                 <div class="main-container inner">
                         <div class="banner">
-                            <div class="banner__item">
+                            <div class="banner__item"
+                                 data-aos="fade-right"
+                                 data-aos-duration="1000">
                                 <div class="banner__promo-block">
-                                    <h1 class="banner__title">Разработка и поддержка сложныx cайтов на Битрикс</h1>
+                                    <h1 class="banner__title">Разработка и поддержка сложныx cайтов на <span class="blue-color">Битрикс</span> </h1>
                                     <p class="banner__subtitle">Настройка и администрирование серверов</p>
                                         <button class="base-button red bunner__button">
                                             <p>Отправить заявку</p>
                                         </button>
                                 </div>
                             </div>
-                            <div class="banner__item banner__item_img">
+                            <div class="banner__item banner__item_img"
+                                 class="banner__item"
+                                 data-aos="fade-left"
+                                 data-aos-duration="1000">
                                 <svg class="banner__promo-img">
                                     <use xlink:href="../image/spritemap.svg#sprite-promo" />
                                 </svg>
@@ -83,8 +89,9 @@
                 </div>
             </section>
             <section class="section">
+                <span class="circle circle__color_blue circle__position_right"></span>
                 <div class="main-container inner">
-                    <h2 class="block-title">Почему мы?</h2>
+                    <h2 class="block-title">Почему <span class="blue-color">мы?</span></h2>
                     <div class="about__items">
                         <div class="about__item">
                             <div class="about__content">
@@ -162,10 +169,11 @@
                 </div>
             </section>
             <section id="services" class="section background-blue">
+                <span class="circle circle__color_green circle__position_right"></span>
                 <div class="main-container inner">
                     <div class="services">
                         <div class="services__item">
-                            <h2 class="block-title">Корпоративным клиентам</h2>
+                            <h2 class="block-title">Корпоративным <span class="blue-color">клиентам</span></h2>
                             <p class="services__discription">
                                 Ненадежный партнер навредит Вашему бизнесу финансово и репутационно.
                                 <br /> Мы более 5 лет работаем с топовыми агентствами и ни разу не подводили своих партнеров
@@ -223,7 +231,7 @@
                             </div>
                         </div>
                         <div class="services__item">
-                            <h2 class="block-title">Digital-агентствам</h2>
+                            <h2 class="block-title">Digital-<span class="blue-color">агентствам</span></h2>
                             <div class="services__cards">
                                 <div class="services__card">
                                     <div class="services__content">
@@ -271,9 +279,10 @@
                 </div>
             </section>
             <section id="portfolio" class="section">
+                <span class="circle circle__color_blue circle__position_left"></span>
                 <div class="main-container inner">
                     <div class="portfolio">
-                        <h2 class="block-title">Реализованные проекты</h2>
+                        <h2 class="block-title">Реализованные <span class="blue-color">проекты</span></h2>
                         <div class="portfolio__items">
                             <div class="portfolio__item">
                                 <div class="portfolio__img_background dark-blue">
@@ -369,8 +378,10 @@
                 </div>
             </section>
             <section class="section background-blue">
+                <span class="circle circle__color_green circle__position_right"></span>
+                <span class="circle circle__color_orange circle__position_left"></span>
                 <div class="main-container inner">
-                    <h2 class="block-title">Нам доверяют</h2>
+                    <h2 class="block-title">Нам <span class="blue-color"> доверяют</span></h2>
                     <div class="partner content">
                         <div class="partner__items">
                             <div class="partner__item">
@@ -407,11 +418,147 @@
                     </div>
                 </div>
             </section>
-            <section class="section background-blue">
+            <section class="section background-dark-blue">
                 <div class="main-container inner">
-                    <div class="team">
+                    <div class="reviews">
                         <h2 class="block-title">
-                            Наша команда
+                            <span class="blue-color">Отзывы</span> о нас
+                        </h2>
+                        <div data-slider class="slider__content">
+                            <div data-slider-container class="swiper-container slider__container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slider__slide reviews__slide">
+                                        <div class="reviews__item">
+                                            <div class="reviews__header">
+                                                <div class="reviews__icon">
+                                                    <img class="reviews__img" src="/src/assets/image/avatar.png" alt="">
+                                                </div>
+                                                <div class="reviews__meta">
+                                                    <p class="reviews__name">Андрей Белый</p>
+                                                    <p class="reviews__position">The Coca-Cola Company</p>
+                                                    <a class="reviews__link" href="">coca-cola.ua</a>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__content">
+                                                <p class="reviews__title">
+                                                    "В сжатые сроки решили сложную задачу, с которой другая команда
+                                                    долго не могла справиться"
+                                                </p>
+                                                <p class="reviews__text">
+                                                    Когда обратились в KDTEAM, стояла сложная задача по интеграции
+                                                    нашего интернет-магазина с 15 складами в различных регионах страны.
+                                                    Раньше у нас с этим были большие проблемы, отваливались цены,
+                                                    постоянные сбои.
+                                                    Ребята основательно и профессионально продошли
+                                                    к вопросу и за месяц сделали интеграцию с нашей учетной системой,
+                                                    системой логистики и сайтов. Все работает как часы
+                                                </p>
+                                                <a href="" class="check-case reviews__check-case">
+                                                    <p class="check-case__text block-text">Посмотреть кейс</p>
+                                                    <svg class="check-case__icon">
+                                                        <use xlink:href="../image/spritemap.svg#sprite-arrow" />
+                                                    </svg>
+                                                    </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slider__slide reviews__slide">
+                                        <div class="reviews__item">
+                                            <div class="reviews__header">
+                                                <div class="reviews__icon">
+                                                    <img class="reviews__img" src="/src/assets/image/avatar.png" alt="">
+                                                </div>
+                                                <div class="reviews__meta">
+                                                    <p class="reviews__name">Андрей Белый</p>
+                                                    <p class="reviews__position">The Coca-Cola Company</p>
+                                                    <a class="reviews__link" href="">coca-cola.ua</a>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__content">
+                                                <p class="reviews__title">
+                                                    "В сжатые сроки решили сложную задачу, с которой другая команда
+                                                    долго не могла справиться"
+                                                </p>
+                                                <p class="reviews__text">
+                                                    Когда обратились в KDTEAM, стояла сложная задача по интеграции
+                                                    нашего интернет-магазина с 15 складами в различных регионах страны.
+                                                    Раньше у нас с этим были большие проблемы, отваливались цены,
+                                                    постоянные сбои.
+                                                    Ребята основательно и профессионально продошли
+                                                    к вопросу и за месяц сделали интеграцию с нашей учетной системой,
+                                                    системой логистики и сайтов. Все работает как часы
+                                                </p>
+                                                <a href="" class="check-case reviews__check-case">
+                                                    <p class="check-case__text block-text">Посмотреть кейс</p>
+                                                    <svg class="check-case__icon">
+                                                        <use xlink:href="../image/spritemap.svg#sprite-arrow" />
+                                                    </svg>
+                                                    </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slider__slide reviews__slide">
+                                        <div class="reviews__item">
+                                            <div class="reviews__header">
+                                                <div class="reviews__icon">
+                                                    <img class="reviews__img" src="/src/assets/image/avatar.png" alt="">
+                                                </div>
+                                                <div class="reviews__meta">
+                                                    <p class="reviews__name">Андрей Белый</p>
+                                                    <p class="reviews__position">The Coca-Cola Company</p>
+                                                    <a class="reviews__link" href="">coca-cola.ua</a>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__content">
+                                                <p class="reviews__title">
+                                                    "В сжатые сроки решили сложную задачу, с которой другая команда
+                                                    долго не могла справиться"
+                                                </p>
+                                                <p class="reviews__text">
+                                                    Когда обратились в KDTEAM, стояла сложная задача по интеграции
+                                                    нашего интернет-магазина с 15 складами в различных регионах страны.
+                                                    Раньше у нас с этим были большие проблемы, отваливались цены,
+                                                    постоянные сбои.
+                                                    Ребята основательно и профессионально продошли
+                                                    к вопросу и за месяц сделали интеграцию с нашей учетной системой,
+                                                    системой логистики и сайтов. Все работает как часы
+                                                </p>
+                                                <a href="" class="check-case reviews__check-case">
+                                                    <p class="check-case__text block-text">Посмотреть кейс</p>
+                                                    <svg class="check-case__icon">
+                                                        <use xlink:href="../image/spritemap.svg#sprite-arrow" />
+                                                    </svg>
+                                                    </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-pagination class="swiper-pagination"></div>
+                            </div>
+                            <div data-nav-next class="slider__nav_next">
+                                <svg class="slider__icon">
+                                    <use
+                                    xlink:href="../image/spritemap.svg#sprite-arrow"
+                                    ></use>
+                                </svg>
+                                </div>
+                            <div data-nav-prev class="slider__nav_prev">
+                                <svg class="slider__icon slider__icon_rotate">
+                                    <use
+                                    xlink:href="../image/spritemap.svg#sprite-arrow"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section background-blue">
+                <span class="circle circle__color_green circle__position_left"></span>
+                <div class="main-container inner">
+                    <div class="trust">
+                        <h2 class="block-title">
+                            Нам <span class="blue-color">доверяют бизнес</span>
                         </h2>
                         <div data-slider class="slider__content">
                             <div data-slider-container class="swiper-container slider__container">
@@ -465,7 +612,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section background-dark-blue-gradient">
+            <section id="achievement" class="section background-dark-blue-gradient">
                 <div class="main-container inner">
                     <div class="achievements">
                         <div class="achievements__item">
@@ -530,7 +677,7 @@
             </section>
             <section class="section">
                 <div class="main-container inner">
-                    <h2 class="block-title">Наши партнеры</h2>
+                    <h2 class="block-title">Наши <span class="blue-color">партнеры</span></h2>
                     <div class="companion__items">
                         <div class="companion__item">
                             <img class="companion__logo" src="/src/assets/image/pride-marketing.png" alt="pride marketing logo">
@@ -548,10 +695,11 @@
                 </div>
             </section>
             <section class="section background-blue">
+                <span class="circle circle__color_green circle__position_right"></span>
                 <div class="main-container inner">
                     <div class="team">
                         <h2 class="block-title">
-                            Наша команда
+                            Наша <span class="blue-color">команда</span>
                         </h2>
                         <div data-slider class="slider__content">
                             <div data-slider-container class="swiper-container slider__container">
@@ -660,11 +808,12 @@
                 <div class="main-container inner">
                     <div class="program">
                         <div class="program__content">
-                            <h2 class="program__title block-title">Використовуємо передові технології</h2>
+                            <h2 class="program__title block-title">Используем передовые <span class="blue-color">технологии</span></h2>
                             <p class="program__text">
-                                Створюємо складні сайти, інтернет-магазини, веб-сервіси для
-                                корпоративних клієнтів і на умовах субпідряду великих digital-агентств.
-                                Вміємо і любимо вирішувати нестандартні завдання
+                                Делаем сложные сайты, интернет-магазины,
+                                веб-сервисы для корпоративных клиентов и на
+                                условиях субподряда крупных digital-агентств.
+                                Умеем и любим решать нестандартные задачи
                             </p>
                             <a href="" class="check-case">
                             <p class="check-case__text block-text">Заполнить бриф</p>
@@ -734,6 +883,8 @@
                 </div>
             </section>
             <section class="section background-blue">
+                <span class="circle circle__color_orange circle__position_left"></span>
+
                 <div class="main-container inner">
                     <div class="epilog">
                         <div class="epilog__media">
@@ -744,7 +895,7 @@
                                 Очередные программисты, работающие по ТЗ
                             </p>
                             <h2 class="block-title epilog__title">
-                                Команда думающих, креативных
+                                Команда <span class="blue-color">думающих</span>, креативных
                                 людей, создающих результат для
                                 вашего бизнеса
                             </h2>
@@ -760,5 +911,95 @@
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="main-container inner">
+                <div class="footer__content">
+                    <div class="footer__feedback">
+                        <div class="footer__text">
+                            <p class="footer__title">От Вас – пару слов о задаче.
+                            <br />
+                            <br />
+                                <span class="footer__text_bg-white"> От нас </span> – лучшее предложение,чтобы достичь ваших целей.
+                            </p>
+
+                        </div>
+                        <svg class="footer__bg-icon">
+                            <use xlink:href="../image/spritemap.svg#sprite-bg-icon" />
+                        </svg>
+                        <div class="footer__form">
+                            <form class="form" action="">
+                                <div class="form__group">
+                                    <label class="form__label" for="name">Имя</label>
+                                    <input required class="form__input" type="text" id="name" name="firstname" placeholder="Введите имя">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="phone">Телефон</label>
+                                    <input required class="form__input" type="text" id="phone" name="phone" placeholder="+380 (--) --- -- --" maxlength="18">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="email">E-mail</label>
+                                    <input required class="form__input" type="text" id="email" name="email" placeholder="kd.team">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="text">О проекте (не обязательно)</label>
+                                    <input class="form__input" type="text" id="text" name="text" placeholder="Несколько основных тезисов о проекте" minlength="30" rows="4">
+                                </div>
+                                <button class="base-button red form__button">
+                                    <p>
+                                        Оставить заявку
+                                    </p>
+                                </button>
+                                <p href="" class="form__politic">
+                                     Нажимая кнопку “Оставить заявку” вы соглашаетесь с
+                                    <br /> <a class="form__politic_underline">политикой конфиденциальности</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="contacts" class="footer__bottom">
+                        <div class="footer__social">
+                            <p class="footer__text-email">Напишите нам</p>
+                            <a class="footer__email" href="">info@kdteam.su</a>
+                            <div class="footer__contact">
+                                <a href="" class="footer__item">
+                                    <div class="footer__icon_bg">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../image/spritemap.svg#sprite-icon-phone" />
+                                        </svg>
+                                    </div>
+                                    <p class="footer__item_text">+38 050 123 45 67</p>
+                                </a>
+                                <a href="" class="footer__item">
+                                    <div class="footer__icon_bg">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../image/spritemap.svg#sprite-icon-facebook" />
+                                        </svg>
+                                    </div>
+                                    <p class="footer__item_text">KDTeamCompany</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__meta">
+                            <button class="base-button blue footer__button">
+                                <div href="" class="check-case">
+                                    <p class="check-case__text block-text">Заполнить бриф</p>
+                                    <svg class="check-case__icon">
+                                        <use xlink:href="../image/spritemap.svg#sprite-arrow" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <p>
+                                <a href="" class="form__politic_underline">
+                                    Политика конфиденциальности
+                                </a>
+                            </p>
+                            <p class="footer__copy">
+                                ©2020 KDTeam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

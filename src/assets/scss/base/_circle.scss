@@ -1,0 +1,49 @@
+.circle {
+    position: absolute;
+    z-index: 2;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100%;
+    animation-name: circleAnimation;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes circleAnimation {
+    0% {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 100%;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        width: 2vw;
+        height: 2vw;
+        border-radius: 10%;
+        transform: rotate(360deg);
+    }
+}
+
+.circle__color_green {
+    background-color: #1ec89e;
+}
+
+.circle__color_orange {
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+}
+
+.circle__color_blue {
+    background: #3066d1;
+}
+
+.circle__position_left {
+    top: 20%;
+    left: -1vw;
+}
+
+.circle__position_right {
+    top: 70%;
+    right: -1vw;
+}
