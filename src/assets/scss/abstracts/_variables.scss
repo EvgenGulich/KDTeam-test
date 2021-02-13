@@ -24,10 +24,13 @@ option {
 
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 $colorRed: #ff4653;
