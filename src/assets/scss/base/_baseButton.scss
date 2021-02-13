@@ -104,17 +104,19 @@
 }
 
 .check-case {
+    position: relative;
     display: flex;
+    width: max-content;
     height: max-content;
-    padding-bottom: get-m-vw(30px);
+    margin-bottom: get-m-vw(30px);
     color: $colorBlue;
 
     @include mediaSize(tablet) {
-        padding-bottom: get-t-vw(30px);
+        margin-bottom: get-t-vw(30px);
     }
 
     @include mediaSize(desktop) {
-        padding-bottom: get-vw(30px);
+        margin-bottom: get-vw(30px);
     }
 
     &:hover {

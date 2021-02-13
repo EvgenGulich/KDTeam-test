@@ -8,14 +8,41 @@
     @include mediaSize(desktop) {
         padding: 0 get-vw(200px);
     }
+
+    .swiper-slide {
+        opacity: 0;
+    }
+
+    .swiper-slide-active {
+        opacity: 1;
+    }
+
+    .swiper-slide-next,
+    .swiper-slide-prev {
+        opacity: 0.7;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .slider__nav_next {
+        left: 120%;
+        z-index: 4;
+    }
+
+    .slider__nav_prev {
+        right: 120%;
+        z-index: 4;
+    }
+}
+
+.reviews__container {
+    overflow: visible;
 }
 
 .reviews__slide {
-    width: 100%;
     padding: 0 get-m-vw(10px);
 
     @include mediaSize(tablet) {
-        padding: 0 get-t-vw(50px);
+        padding: 0 get-t-vw(150px);
     }
 
     @include mediaSize(desktop) {

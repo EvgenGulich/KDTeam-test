@@ -1,5 +1,5 @@
-import Swiper, { Pagination } from 'swiper';
-Swiper.use(Pagination);
+import Swiper, { Pagination, EffectCoverflow } from 'swiper';
+Swiper.use([Pagination, EffectCoverflow]);
 import { Component } from '../libs/component';
 
 export class Slider extends Component {
@@ -27,7 +27,7 @@ export class Slider extends Component {
             ) {
                 $dots.forEach((item, i) => {
                     if (target == item) {
-                        slider.slideToLoop(i, 500, true);
+                        slider.slideToLoop(i, 800, true);
                     }
                 });
             }
@@ -36,13 +36,13 @@ export class Slider extends Component {
 
     slideNext(slider) {
         this.$navNext.addEventListener('click', () => {
-            slider.slideNext(500, true);
+            slider.slideNext(800, true);
         });
     }
 
     slidePrev(slider) {
         this.$navPrev.addEventListener('click', () => {
-            slider.slidePrev(500, true);
+            slider.slidePrev(800, true);
         });
     }
 
@@ -76,20 +76,48 @@ export class Slider extends Component {
     }
 
     slider() {
-        const slider = new Swiper(this.$container, {
-            direction: 'horizontal',
+        const optionsDefault = {
             slidesPerView: 'auto',
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
             },
-        });
+        };
 
-        this.getTotalSlide(this.checkNumber);
-        this.getActiveSlide(slider, this.checkNumber);
-        this.slideNext(slider);
-        this.slidePrev(slider);
-        this.pagination(slider);
+        const optionsCoverEffect = {
+            slidesPerView: 1,
+            loop: true,
+            loopAdditionalSlides: 3,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            centeredSlides: true,
+            grabCursor: true,
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 0, // Slide rotate in degrees
+                stretch: 600, // Stretch space between slides (in px)
+                depth: 200, // Depth offset in px (slides translate in Z axis)
+                modifier: 1, // Effect multipler
+                slideShadows: false, // Enables slides shadows
+            },
+        };
+
+        if (this.element.hasAttribute('data-cover-effect')) {
+            const slider = new Swiper(this.$container, optionsCoverEffect);
+            this.getTotalSlide(this.checkNumber);
+            this.getActiveSlide(slider, this.checkNumber);
+            this.slideNext(slider);
+            this.slidePrev(slider);
+            this.pagination(slider);
+        } else {
+            const slider = new Swiper(this.$container, optionsDefault);
+            this.getTotalSlide(this.checkNumber);
+            this.getActiveSlide(slider, this.checkNumber);
+            this.slideNext(slider);
+            this.slidePrev(slider);
+            this.pagination(slider);
+        }
     }
 
     initialize() {
